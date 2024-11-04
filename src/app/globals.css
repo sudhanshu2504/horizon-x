@@ -2,20 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Primary';
+  src: url(../fonts/PrimaryFont.ttf) format('truetype');
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Primary';
+}
+.bg-color {
+  background-color: var(--bg-color);
+}
+.paragraph-color {
+  color: var(--paragraph-color);
+}
+.border-color {
+  border-color: var(--border-color);
+}
+.accent-color {
+  color: var(--accent-color);
+}
+.button-hover:hover {
+  background-color: var(--button-on-hover-color);
+}
+.button-text-color {
+  color: var(--button-text-color);
+}
+.transparent-white {
+  background-color: var(--transparent-white);
+}
+.light-color {
+  background-color: var(--light-color);
+}
+.transparent-white-on-bg-color {
+  color: var(--transparent-white-on-bg-color);
+}
+
+
+:root {
+  --bg-color: #03050f;
+  --paragraph-color: #fff5ed;
+  --border-color: #ffffff1a;
+  --accent-color: #f19c79;
+  --button-on-hover-color: #ffac8a;
+  --button-text-color: #272525;
+  --transparent-white: #ffffff0d;
+  --light-color: #ed6d45;
+  --black: black;
+  --white: white;
+  --transparent-white-on-bg-color: #10121a;
 }
